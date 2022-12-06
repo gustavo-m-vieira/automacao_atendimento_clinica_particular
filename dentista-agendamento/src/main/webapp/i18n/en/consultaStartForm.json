@@ -1,0 +1,26 @@
+{
+  "jhipsterApp": {
+    "consultaStartForm": {
+      "home": {
+        "title": "Consulta Start Forms",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Consulta Start Form",
+        "createOrEditLabel": "Create or edit a Consulta Start Form",
+        "notFound": "No Consulta Start Forms found"
+      },
+      "created": "A new Consulta Start Form is created with identifier {{ param }}",
+      "updated": "A Consulta Start Form is updated with identifier {{ param }}",
+      "deleted": "A Consulta Start Form is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Consulta Start Form {{ id }}?"
+      },
+      "detail": {
+        "title": "Consulta Start Form"
+      },
+      "id": "ID",
+      "name": "Name",
+      "cpf": "Cpf",
+      "email": "Email"
+    }
+  }
+}

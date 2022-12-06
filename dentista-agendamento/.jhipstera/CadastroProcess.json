@@ -1,0 +1,23 @@
+{
+  "fields": [
+    {
+      "fieldName": "cpf",
+      "fieldType": "String",
+      "fieldReadOnly": true
+    }
+  ],
+  "relationships": [],
+  "entityType": "user-task-form",
+  "processBpmnId": "ConsultaProcess",
+  "processEntityName": "ConsultaProcess",
+  "taskBpmnId": "CadastroProcess",
+  "domainEntityName": "Consulta",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "CadastroProcess",
+  "changelogDate": "20210401000002",
+  "skipFakeData": true
+}

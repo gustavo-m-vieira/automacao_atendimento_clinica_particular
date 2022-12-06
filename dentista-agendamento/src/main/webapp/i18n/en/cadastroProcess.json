@@ -1,0 +1,24 @@
+{
+  "jhipsterApp": {
+    "cadastroProcess": {
+      "home": {
+        "title": "Cadastro Processes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Cadastro Process",
+        "createOrEditLabel": "Create or edit a Cadastro Process",
+        "notFound": "No Cadastro Processes found"
+      },
+      "created": "A new Cadastro Process is created with identifier {{ param }}",
+      "updated": "A Cadastro Process is updated with identifier {{ param }}",
+      "deleted": "A Cadastro Process is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Cadastro Process {{ id }}?"
+      },
+      "detail": {
+        "title": "Cadastro Process"
+      },
+      "id": "ID",
+      "cpf": "Cpf"
+    }
+  }
+}
