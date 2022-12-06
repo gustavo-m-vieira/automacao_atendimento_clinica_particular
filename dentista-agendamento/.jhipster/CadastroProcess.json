@@ -8,7 +8,7 @@
   ],
   "relationships": [],
   "entityType": "user-task-form",
-  "processBpmnId": "ConsultaProcess",
+  "processBpmnId": "Consulta",
   "processEntityName": "ConsultaProcess",
   "taskBpmnId": "CadastroProcess",
   "domainEntityName": "Consulta",

@@ -2,39 +2,47 @@
   "fields": [
     {
       "fieldName": "name",
-      "fieldType": "String"
+      "fieldType": "String",
+      "fieldReadOnly": true
     },
     {
       "fieldName": "cpf",
-      "fieldType": "String"
+      "fieldType": "String",
+      "fieldReadOnly": true
     },
     {
       "fieldName": "date",
-      "fieldType": "LocalDate"
+      "fieldType": "LocalDate",
+      "fieldReadOnly": false
     },
     {
       "fieldName": "email",
-      "fieldType": "String"
+      "fieldType": "String",
+      "fieldReadOnly": true
     },
     {
       "fieldName": "price",
-      "fieldType": "Double"
+      "fieldType": "String",
+      "fieldReadOnly": true
     },
     {
       "fieldName": "durationInMinutes",
-      "fieldType": "Double"
+      "fieldType": "Double",
+      "fieldReadOnly": false
     }
   ],
   "relationships": [],
-  "entityType": "process-binding",
-  "processBpmnId": "ConsultaProcess",
+  "entityType": "user-task-form",
+  "processBpmnId": "Consulta",
+  "processEntityName": "ConsultaProcess",
+  "taskBpmnId": "SelConsulta",
   "domainEntityName": "Consulta",
   "service": "serviceClass",
   "dto": "mapstruct",
   "jpaMetamodelFiltering": false,
   "readOnly": false,
   "pagination": "no",
-  "name": "ConsultaProcess",
+  "name": "SelConsulta",
   "changelogDate": "20210401000002",
   "skipFakeData": true
 }
