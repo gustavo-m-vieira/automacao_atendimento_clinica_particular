@@ -52,6 +52,7 @@
     "jwtSecretKey": "YWZjNGU2NDU3Mjg3OTFhNWE3NjU5OTQxZDExNDQ0Njk5MGJjNjNkZmRiN2ZkMTg1ZTQzOGE1NmU1ZDhmMzE5YzQwNzY3Y2FiZWYwMzc2MTMwNTU5NzlkZjNlY2E0YTgzNDA4MmViOWUyYjNjYTEzYmQ1NjJlYTIzYjIxZGI2ZjU=",
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
-    "languages": ["en"]
+    "languages": ["en"],
+    "entities": ["Consulta"]
   }
 }

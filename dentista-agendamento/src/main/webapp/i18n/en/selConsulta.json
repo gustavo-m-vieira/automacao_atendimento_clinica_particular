@@ -1,0 +1,29 @@
+{
+  "jhipsterApp": {
+    "selConsulta": {
+      "home": {
+        "title": "Sel Consultas",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Sel Consulta",
+        "createOrEditLabel": "Create or edit a Sel Consulta",
+        "notFound": "No Sel Consultas found"
+      },
+      "created": "A new Sel Consulta is created with identifier {{ param }}",
+      "updated": "A Sel Consulta is updated with identifier {{ param }}",
+      "deleted": "A Sel Consulta is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Sel Consulta {{ id }}?"
+      },
+      "detail": {
+        "title": "Sel Consulta"
+      },
+      "id": "ID",
+      "name": "Name",
+      "cpf": "Cpf",
+      "date": "Date",
+      "email": "Email",
+      "price": "Price",
+      "durationInMinutes": "Duration In Minutes"
+    }
+  }
+}
