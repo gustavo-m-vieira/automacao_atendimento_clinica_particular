@@ -32,8 +32,6 @@ import TrackerService from './admin/tracker/tracker.service';
 import UserOAuth2Service from '@/entities/user/user.oauth2.service';
 /* tslint:disable */
 
-import ConsultaService from '@/entities/consulta/consulta.service';
-import ConsultaProcessService from '@/entities/consulta-process/consulta-process.service';
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 /* tslint:enable */
@@ -99,8 +97,6 @@ new Vue({
 
     userOAuth2Service: () => new UserOAuth2Service(),
     translationService: () => translationService,
-    consultaService: () => new ConsultaService(),
-    consultaProcessService: () => new ConsultaProcessService(),
     // jhipster-needle-add-entity-service-to-main - JHipster will import entities services here
     accountService: () => accountService,
   },

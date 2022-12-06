@@ -12,12 +12,6 @@
         "processInstance": "Process Instances",
         "taskInstance": "All Tasks",
         "myCandidateTasks": "My Tasks",
-        "consulta": "Consulta",
-        "cadastroProcess": "Cadastro Process",
-        "consultaProcess": "Consulta Process",
-        "consultaStartForm": "Consulta Start Form",
-        "infoCadastro": "Info Cadastro",
-        "selConsulta": "Sel Consulta",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
