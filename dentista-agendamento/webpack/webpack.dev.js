@@ -44,11 +44,6 @@ module.exports = webpackMerge(baseWebpackConfig, {
         secure: false,
         headers: { host: 'localhost:9000' },
       },
-      {
-        context: ['/websocket'],
-        target: 'ws://127.0.0.1:8080',
-        ws: true,
-      },
     ],
     watchOptions: {
       ignored: /node_modules/,
@@ -74,7 +69,6 @@ module.exports = webpackMerge(baseWebpackConfig, {
         port: 9000,
         proxy: {
           target: 'http://localhost:9060',
-          ws: true,
         },
         socket: {
           clients: {

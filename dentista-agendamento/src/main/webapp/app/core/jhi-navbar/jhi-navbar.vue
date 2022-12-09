@@ -68,10 +68,6 @@
             <font-awesome-icon icon="users" />
             <span v-text="$t('global.menu.admin.userManagement')">User management</span>
           </b-dropdown-item>
-          <b-dropdown-item to="/admin/tracker" active-class="active">
-            <font-awesome-icon icon="eye" />
-            <span v-text="$t('global.menu.admin.tracker')">User tracker</span>
-          </b-dropdown-item>
           <b-dropdown-item to="/admin/metrics" active-class="active">
             <font-awesome-icon icon="tachometer-alt" />
             <span v-text="$t('global.menu.admin.metrics')">Metrics</span>

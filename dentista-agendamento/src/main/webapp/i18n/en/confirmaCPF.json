@@ -1,0 +1,24 @@
+{
+  "jhipsterApp": {
+    "confirmaCPF": {
+      "home": {
+        "title": "Confirma CPFS",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Confirma CPF",
+        "createOrEditLabel": "Create or edit a Confirma CPF",
+        "notFound": "No Confirma CPFS found"
+      },
+      "created": "A new Confirma CPF is created with identifier {{ param }}",
+      "updated": "A Confirma CPF is updated with identifier {{ param }}",
+      "deleted": "A Confirma CPF is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Confirma CPF {{ id }}?"
+      },
+      "detail": {
+        "title": "Confirma CPF"
+      },
+      "id": "ID",
+      "cpf": "Cpf"
+    }
+  }
+}

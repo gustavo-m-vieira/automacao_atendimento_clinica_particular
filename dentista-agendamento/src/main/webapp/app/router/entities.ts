@@ -11,6 +11,10 @@ const ConsultaProcess_CadastroProcessDetails = () => import('@/entities/consulta
 // prettier-ignore
 const ConsultaProcess_CadastroProcessExecute = () => import('@/entities/consulta-process/cadastro-process/cadastro-process-execute.vue');
 // prettier-ignore
+const ConsultaProcess_ConfirmaCPFDetails = () => import('@/entities/consulta-process/confirma-cpf/confirma-cpf-details.vue');
+// prettier-ignore
+const ConsultaProcess_ConfirmaCPFExecute = () => import('@/entities/consulta-process/confirma-cpf/confirma-cpf-execute.vue');
+// prettier-ignore
 const ConsultaProcessDetails = () => import('@/entities/consulta-process/consulta-process-details.vue');
 // prettier-ignore
 const ConsultaProcessList = () => import('@/entities/consulta-process/consulta-process-list.vue');
@@ -49,6 +53,18 @@ export default [
     path: '/process-definition/Consulta/task/CadastroProcess/:taskInstanceId/execute',
     name: 'ConsultaProcess_CadastroProcessExecute',
     component: ConsultaProcess_CadastroProcessExecute,
+    meta: { authorities: [Authority.USER] },
+  },
+  {
+    path: '/process-definition/Consulta/task/ConfirmaCPF/:taskInstanceId/view',
+    name: 'ConsultaProcess_ConfirmaCPFDetails',
+    component: ConsultaProcess_ConfirmaCPFDetails,
+    meta: { authorities: [Authority.USER] },
+  },
+  {
+    path: '/process-definition/Consulta/task/ConfirmaCPF/:taskInstanceId/execute',
+    name: 'ConsultaProcess_ConfirmaCPFExecute',
+    component: ConsultaProcess_ConfirmaCPFExecute,
     meta: { authorities: [Authority.USER] },
   },
   {

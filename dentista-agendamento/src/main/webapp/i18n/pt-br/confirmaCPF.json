@@ -1,0 +1,24 @@
+{
+  "jhipsterApp": {
+    "confirmaCPF": {
+      "home": {
+        "title": "Confirma CPFS",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Confirma CPF",
+        "createOrEditLabel": "Criar ou editar Confirma CPF",
+        "notFound": "Nenhum Confirma CPF encontrado"
+      },
+      "created": "Um novo Confirma CPF foi criado com o identificador {{ param }}",
+      "updated": "Um Confirma CPF foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Confirma CPF foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Confirma CPF {{ id }}?"
+      },
+      "detail": {
+        "title": "Confirma CPF"
+      },
+      "id": "ID",
+      "cpf": "Cpf"
+    }
+  }
+}

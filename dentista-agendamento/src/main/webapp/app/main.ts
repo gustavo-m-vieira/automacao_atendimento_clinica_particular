@@ -27,7 +27,6 @@ import VueMarkdown from 'vue-markdown';
 
 import '../content/scss/vendor.scss';
 import TranslationService from '@/locale/translation.service';
-import TrackerService from './admin/tracker/tracker.service';
 
 import UserOAuth2Service from '@/entities/user/user.oauth2.service';
 /* tslint:disable */
@@ -55,10 +54,9 @@ Vue.component('vue-markdown', VueMarkdown);
 const i18n = config.initI18N(Vue);
 const store = config.initVueXStore(Vue);
 
-const trackerService = new TrackerService(router);
 const translationService = new TranslationService(store, i18n);
 const loginService = new LoginService();
-const accountService = new AccountService(store, translationService, trackerService, router);
+const accountService = new AccountService(store, translationService, router);
 
 router.beforeEach((to, from, next) => {
   if (!to.matched.length) {
@@ -95,7 +93,6 @@ new Vue({
     configurationService: () => new ConfigurationService(),
     logsService: () => new LogsService(),
     metricsService: () => new MetricsService(),
-    trackerService: () => trackerService,
 
     userOAuth2Service: () => new UserOAuth2Service(),
     translationService: () => translationService,

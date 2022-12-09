@@ -1,0 +1,21 @@
+{
+  "jhipsterApp": {
+    "consulta": {
+      "home": {
+        "title": "Consultas",
+        "refreshListLabel": "Atualizar lista",
+        "notFound": "Nenhum Consulta encontrado"
+      },
+      "detail": {
+        "title": "Consulta"
+      },
+      "id": "ID",
+      "name": "Name",
+      "cpf": "Cpf",
+      "date": "Date",
+      "email": "Email",
+      "price": "Price",
+      "durationInMinutes": "Duration In Minutes"
+    }
+  }
+}

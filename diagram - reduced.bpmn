@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_1j0fgok" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.4.1" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.18.0">
+  <bpmn:process id="Consulta" name="Consulta" isExecutable="true">
+    <bpmn:startEvent id="StartEvent" name="StartEvent">
+      <bpmn:outgoing>Flow_1qexyov</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="Event_02vvsdx">
+      <bpmn:incoming>Flow_179xlhd</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_1qexyov" sourceRef="StartEvent" targetRef="InfoCadastro" />
+    <bpmn:sequenceFlow id="Flow_13ea60o" sourceRef="SelConsulta" targetRef="PersistenciaMarcacao" />
+    <bpmn:sequenceFlow id="Flow_0c4hijg" sourceRef="PersistenciaMarcacao" targetRef="ConfirmacaoEmail" />
+    <bpmn:sequenceFlow id="Flow_179xlhd" sourceRef="ConfirmacaoEmail" targetRef="Event_02vvsdx" />
+    <bpmn:userTask id="InfoCadastro" name="Informacoes de cadastro">
+      <bpmn:incoming>Flow_1qexyov</bpmn:incoming>
+      <bpmn:outgoing>Flow_0oqk7d9</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="SelConsulta" name="Selecao de Consulta">
+      <bpmn:incoming>Flow_0oqk7d9</bpmn:incoming>
+      <bpmn:outgoing>Flow_13ea60o</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sendTask id="ConfirmacaoEmail" name="Confirmação por email" camunda:type="external" camunda:topic="">
+      <bpmn:incoming>Flow_0c4hijg</bpmn:incoming>
+      <bpmn:outgoing>Flow_179xlhd</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:serviceTask id="PersistenciaMarcacao" name="Persistencia da Marcacao" camunda:type="external" camunda:topic="">
+      <bpmn:incoming>Flow_13ea60o</bpmn:incoming>
+      <bpmn:outgoing>Flow_0c4hijg</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_0oqk7d9" sourceRef="InfoCadastro" targetRef="SelConsulta" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Consulta">
+      <bpmndi:BPMNShape id="Event_1oxam37_di" bpmnElement="StartEvent">
+        <dc:Bounds x="152" y="102" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="144" y="145" width="53" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_02vvsdx_di" bpmnElement="Event_02vvsdx">
+        <dc:Bounds x="912" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0bua3lz_di" bpmnElement="InfoCadastro">
+        <dc:Bounds x="280" y="80" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0ktcq7m_di" bpmnElement="SelConsulta">
+        <dc:Bounds x="430" y="80" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1uoas1r_di" bpmnElement="ConfirmacaoEmail">
+        <dc:Bounds x="730" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0zvkbf4_di" bpmnElement="PersistenciaMarcacao">
+        <dc:Bounds x="590" y="80" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1qexyov_di" bpmnElement="Flow_1qexyov">
+        <di:waypoint x="188" y="120" />
+        <di:waypoint x="280" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_179xlhd_di" bpmnElement="Flow_179xlhd">
+        <di:waypoint x="830" y="120" />
+        <di:waypoint x="912" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0oqk7d9_di" bpmnElement="Flow_0oqk7d9">
+        <di:waypoint x="380" y="120" />
+        <di:waypoint x="430" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_13ea60o_di" bpmnElement="Flow_13ea60o">
+        <di:waypoint x="530" y="120" />
+        <di:waypoint x="590" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0c4hijg_di" bpmnElement="Flow_0c4hijg">
+        <di:waypoint x="690" y="120" />
+        <di:waypoint x="730" y="120" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

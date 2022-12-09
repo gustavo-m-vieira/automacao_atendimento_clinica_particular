@@ -17,6 +17,7 @@
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210401000001_added_entity_Consulta.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210401000002_added_entity_CadastroProcess.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210401000002_added_entity_ConfirmaCPF.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210401000002_added_entity_ConsultaProcess.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210401000002_added_entity_ConsultaStartForm.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210401000002_added_entity_InfoCadastro.xml" relativeToChangelogFile="false"/>
