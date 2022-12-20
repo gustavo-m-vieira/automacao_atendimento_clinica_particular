@@ -2,8 +2,6 @@ package com.mycompany.myapp.delegate;
 
 import java.util.Locale;
 
-
-
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +13,7 @@ import com.mycompany.myapp.service.dto.ConsultaProcessDTO;
 import com.mycompany.myapp.service.MailService;
 import com.mycompany.myapp.service.dto.ConsultaDTO;
 
+@Component
 public class EmailDelegate implements JavaDelegate {
   
   @Autowired
@@ -30,6 +29,8 @@ public class EmailDelegate implements JavaDelegate {
 
     String to = consulta.getEmail();
     String subject = "Confirmação de agendamento";
+
+    System.out.println("=== "+to+" ===");
 
     Context context = new Context(Locale.getDefault());
     context.setVariable("consulta", consulta);

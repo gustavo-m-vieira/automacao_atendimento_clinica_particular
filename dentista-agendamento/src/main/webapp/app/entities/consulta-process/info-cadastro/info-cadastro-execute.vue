@@ -45,6 +45,7 @@
                 class="form-control"
                 name="email"
                 id="info-cadastro-email"
+                readonly
                 data-cy="email"
                 :class="{
                   valid: !$v.taskContext.consultaProcess.consulta.email.$invalid,

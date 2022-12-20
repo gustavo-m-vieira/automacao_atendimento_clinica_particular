@@ -8,6 +8,7 @@ import org.camunda.bpm.engine.delegate.JavaDelegate;
 import com.mycompany.myapp.domain.Consulta;
 import org.springframework.stereotype.Component;
 
+@Component
 public class PersistindoDelegate implements JavaDelegate {
   private final ConsultaRepository consultaRepo;
 

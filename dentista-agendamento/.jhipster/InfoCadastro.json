@@ -10,7 +10,8 @@
     },
     {
       "fieldName": "email",
-      "fieldType": "String"
+      "fieldType": "String",
+      "fieldReadOnly": true
     }
   ],
   "relationships": [],

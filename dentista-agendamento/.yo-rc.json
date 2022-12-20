@@ -26,7 +26,7 @@
     "dtoSuffix": "DTO",
     "testFrameworks": [],
     "pages": [],
-    "creationTimestamp": 1670618374110,
+    "creationTimestamp": 1671495807333,
     "serviceDiscoveryType": false,
     "reactive": false,
     "authenticationType": "jwt",
@@ -49,10 +49,10 @@
     "enableTranslation": true,
     "nativeLanguage": "en",
     "packageFolder": "com/mycompany/myapp",
-    "jwtSecretKey": "NmUyNzg1OTY0ZDRlNDg0ODA5NGQzM2QxNWY4ZWY4ZDA4ZmEwYTRlM2I1ZDVhNjYyNjI2M2RkOGFhNTU2MGI4MTkzNGJlOTg1ZDA0NjAwMjRmZWIwZDAwMjI5M2MxZTJmNjcxNzUyMWY3NzU3ODk4ZmZhMjJmOTczMjI1MGEyNDQ=",
+    "jwtSecretKey": "YTY4M2ZkZDBiNmYwOWNmNTg2ZTI1MWYwYWNlN2FmZDJkYzlmYTZmYjAyY2FiMzExZmQzMTA5YWM1ODA4Y2M5MzI3NzY2ZjgzMWFkNTQ3YzA0ZmJmNWNmYjY1MjYwZjdlODI1NGE4OGFjYjFhNGU2M2FjNmQwYmYxYjliYzE5NmE=",
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
-    "languages": ["en", "pt-br"],
+    "languages": ["en"],
     "entities": ["Consulta"]
   }
 }

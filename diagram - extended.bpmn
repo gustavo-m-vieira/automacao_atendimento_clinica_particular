@@ -19,11 +19,11 @@
       <bpmn:incoming>Flow_1824bur</bpmn:incoming>
       <bpmn:outgoing>Flow_13ea60o</bpmn:outgoing>
     </bpmn:userTask>
-    <bpmn:sendTask id="ConfirmacaoEmail" name="Confirmação por email" camunda:delegateExpression="${EmailDelegate}">
+    <bpmn:sendTask id="ConfirmacaoEmail" name="Confirmação por email" camunda:delegateExpression="${emailDelegate}">
       <bpmn:incoming>Flow_0c4hijg</bpmn:incoming>
       <bpmn:outgoing>Flow_179xlhd</bpmn:outgoing>
     </bpmn:sendTask>
-    <bpmn:serviceTask id="PersistenciaMarcacao" name="Persistencia da Marcacao" camunda:delegateExpression="${PersistindoDelegate}">
+    <bpmn:serviceTask id="PersistenciaMarcacao" name="Persistencia da Marcacao" camunda:delegateExpression="${persistindoDelegate}">
       <bpmn:incoming>Flow_13ea60o</bpmn:incoming>
       <bpmn:outgoing>Flow_0c4hijg</bpmn:outgoing>
     </bpmn:serviceTask>
@@ -40,7 +40,7 @@
     </bpmn:exclusiveGateway>
     <bpmn:sequenceFlow id="Flow_1824bur" sourceRef="Gateway2" targetRef="SelConsulta" />
     <bpmn:sequenceFlow id="wrongLength" sourceRef="Gateway1" targetRef="ConfirmaCPF">
-      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${pi.getConsulta().getCpf().isEmpty()}</bpmn:conditionExpression>
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${pi.getConsulta().getCpf()==null}</bpmn:conditionExpression>
     </bpmn:sequenceFlow>
     <bpmn:sequenceFlow id="Flow_1w3mfsq" sourceRef="ConfirmaCPF" targetRef="Gateway2" />
     <bpmn:userTask id="ConfirmaCPF" name="Confirmar CPF">

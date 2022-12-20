@@ -5,11 +5,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   </head>
   <body>
-    <p>Dentista agendado para <span th:text="${emailDomain.name}"></span</p>
+    <p>Dentista agendado para <span th:text="${consulta.name}"></span</p>
     <ul>
-      <li><b>Data</b>: <span th:text="${emailDomain.date}"></span></li>
-      <li><b>Preço</b>: <span th:text="${emailDomain.price}"></span></li>
-      <li><b>Duração</b>: <span th:text="${emailDomain.durationInMinutes}"></span></li>
+      <li><b>Data</b>: <span th:text="${consulta.date}"></span></li>
+      <li><b>Preço</b>: <span th:text="${consulta.price}"></span></li>
+      <li><b>Duração</b>: <span th:text="${consulta.durationInMinutes}"></span></li>
     </ul>
   </body>
 </html>

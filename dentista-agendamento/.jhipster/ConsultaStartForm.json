@@ -1,14 +1,6 @@
 {
   "fields": [
     {
-      "fieldName": "name",
-      "fieldType": "String"
-    },
-    {
-      "fieldName": "cpf",
-      "fieldType": "String"
-    },
-    {
       "fieldName": "email",
       "fieldType": "String"
     }

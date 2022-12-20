@@ -10,8 +10,6 @@ import ConsultaProcessService from './consulta-process.service';
 const validations: any = {
   consultaProcess: {
     consulta: {
-      name: {},
-      cpf: {},
       email: {},
     },
   },

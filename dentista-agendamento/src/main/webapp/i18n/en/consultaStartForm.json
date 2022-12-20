@@ -18,8 +18,6 @@
         "title": "Consulta Start Form"
       },
       "id": "ID",
-      "name": "Name",
-      "cpf": "Cpf",
       "email": "Email"
     }
   }

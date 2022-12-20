@@ -15,34 +15,6 @@
               <hr />
               <div v-if="consultaProcess.consulta">
                 <div class="form-group">
-                  <label class="form-control-label" v-text="$t('jhipsterApp.consultaStartForm.name')" for="consulta-start-form-name"
-                    >Name</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="name"
-                    id="consulta-start-form-name"
-                    data-cy="name"
-                    :class="{ valid: !$v.consultaProcess.consulta.name.$invalid, invalid: $v.consultaProcess.consulta.name.$invalid }"
-                    v-model="$v.consultaProcess.consulta.name.$model"
-                  />
-                </div>
-                <div class="form-group">
-                  <label class="form-control-label" v-text="$t('jhipsterApp.consultaStartForm.cpf')" for="consulta-start-form-cpf"
-                    >Cpf</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="cpf"
-                    id="consulta-start-form-cpf"
-                    data-cy="cpf"
-                    :class="{ valid: !$v.consultaProcess.consulta.cpf.$invalid, invalid: $v.consultaProcess.consulta.cpf.$invalid }"
-                    v-model="$v.consultaProcess.consulta.cpf.$model"
-                  />
-                </div>
-                <div class="form-group">
                   <label class="form-control-label" v-text="$t('jhipsterApp.consultaStartForm.email')" for="consulta-start-form-email"
                     >Email</label
                   >
